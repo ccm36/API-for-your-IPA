@@ -19,26 +19,44 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
+  Taste-a-Beer
+
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+
+  An adventurous dive into BrewDog's beer catalog for the inquisitive
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  Have you ever wondered about experiencing new beers, or revisiting some of your old favorites? Taste-a-beer offers solutions to search for, save, and learn more about the beers that keep you coming back for more.  From finding your favorite style to deciding the beer that best pairs with your meal, Taste-a-Beer provides a curated beer drinking experience for the curious.
+
 ## Problem ##
   > Describe the problem your product solves.
+
+  What beer should I drink next?
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
+  Allows you to randomly select or search for beers you may want to try, provides information about each, and allows users to save their favorites into a user profile.
+
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+
+  Don't conform to the standard go-to beer; get away from staring blankly at the menu.  Taste-a-Beer provides you with everything you need to find that next hidden gem of a beer you can't do without.
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
+  Upon entering Taste-a-Beer, your new favorite beer is but a 'random beer' click away.
+
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
+  'I never would have tried XYZ beer had it not been for Taste-a-Beer.  They opened up my beer drinking experience, and now I'll never drink a Bud Light again!'
+
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+
+  With the ability to search, save, and comment on beers you find, check Taste-a-Beer to find that new brew today. 
