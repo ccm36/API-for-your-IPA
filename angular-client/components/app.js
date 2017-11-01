@@ -1,8 +1,10 @@
 angular.module('app')
 .controller('AppCtrl', function(itemsService) {
   itemsService.getAll((data) => {
-    this.items = data;
-  });
+    console.log(data);
+    this.beers = data;
+    this.currentBeer = this.beers[0];
+  })
 })
 .component('app', {
   bindings: {},

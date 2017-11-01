@@ -10,12 +10,13 @@ var app = express();
 app.use(express.static(__dirname + '/../angular-client'));
 app.use(express.static(__dirname + '/../node_modules'));
 
-app.get('/items', function (req, res) {
+app.get('https://api.punkapi.com/v2/beers', function (req, res) {
   items.selectAll(function(err, data) {
     if(err) {
       res.sendStatus(500);
     } else {
       res.json(data);
+      console.log(data)
     }
   });
 });

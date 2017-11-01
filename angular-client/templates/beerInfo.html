@@ -1,0 +1,20 @@
+<div class="beer-info loading" ng-if="!$ctrl.beer">Please wait...</div>
+<div class="beer-info" ng-if="$ctrl.beer">
+  <div class="beer-pic">
+    <img src="{{$ctrl.beer.image_url}}" />
+  </div>
+  <div class="beer-info-details">
+    <h3 id='name'>NAME: {{$ctrl.beer.name}}</h3>
+    <p>{{$ctrl.beer.tagline}}</p>
+    <ul>
+      <li>{{$ctrl.beer.description}}</li>
+      <li>ABV {{$ctrl.beer.abv}}%</li>
+      <li>IBU {{$ctrl.beer.ibu}}</li>
+      <li>FOOD PAIRINGS: 
+        <ul>
+          <li ng-repeat="food in $ctrl.beer.food_pairing"> {{food}}</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

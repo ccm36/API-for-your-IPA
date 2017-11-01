@@ -1,7 +1,7 @@
 angular.module('app')
 .service('itemsService', function($http) {
   this.getAll = function(callback) {
-    $http.get('/items')
+    $http.get('https://api.punkapi.com/v2/beers')
     .then(function({data}) {
       if(callback) {
         callback(data);
