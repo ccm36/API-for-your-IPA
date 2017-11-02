@@ -1,4 +1,4 @@
-<div id="app container">
+<div id="app container" >
   <nav class="navbar">
     <search 
       beers="beers"
@@ -6,9 +6,11 @@
       get-search-results="$ctrl.getSearchResults"
     />
   </nav>
+  <br>
   <div class="beerInfo">
     <beer-info beer="$ctrl.currentBeer"/>
   </div>
+  <br>
   <div class="row">
     <beer-list 
       beers="$ctrl.beers" 

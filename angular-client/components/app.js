@@ -4,7 +4,6 @@ angular.module('app')
   itemsService.getAll((data) => {
     this.beers = data;
     this.currentBeer = this.beers[0];
-    console.log(this.currentBeer);
   }),
 
   this.selectBeer = (beer) => {
@@ -17,14 +16,14 @@ angular.module('app')
     query = query.toLowerCase();
     var matchingBeers = this.beers.filter((beer) => {
       return (
+        beer.abv <= +query ||
+        beer.ibu <= +query ||
         beer.name.toLowerCase().includes(query) ||
         beer.tagline.toLowerCase().includes(query) ||
         beer.description.toLowerCase().includes(query) ||
         beer.food_pairing.forEach((pairing) => {
           pairing.toLowerCase().includes(query)
-        }) ||
-        beer.abv <= query ||
-        beer.ibu <= query 
+        })
       )
     })
     this.currentBeer = matchingBeers[0];
