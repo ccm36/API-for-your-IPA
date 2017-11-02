@@ -4,7 +4,10 @@ angular.module('app')
     console.log(data);
     this.beers = data;
     this.currentBeer = this.beers[0];
-  })
+  }),
+  this.selectBeer = (beer) => {
+    this.currentBeer = beer;
+  }
 })
 .component('app', {
   bindings: {},

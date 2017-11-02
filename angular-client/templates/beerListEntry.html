@@ -1,15 +1,20 @@
-<li class="beer-list-entry">
+<div 
+  class="beer-list-entry"  
+  ng-click="$ctrl.onBeerEntryClick($ctrl.beer)"
+>
 
   <div>
-    <img src="{{$ctrl.beer.image_url}}" />
+    <img ng-src={{$ctrl.beer.image_url}} />
   </div>
 
   <div class="beer-description">
-    <div class="beer-list-entry-name" ng-click="$ctrl.onClick($ctrl.beer)">
-      {{$ctrl.beer.name}}
-    </div>
-    <div class="beer-list-entry-tag">{{$ctrl.beer.tagline}}</div>
-    <div class="beer-list-entry-description">{{$ctrl.beer.description}}</div>
+    <h3 id='name'>
+      NAME: {{$ctrl.beer.name}}
+    </h3>
+    <p class="beer-list-entry-tag">{{$ctrl.beer.tagline}}</p>
+    <p class="beer-list-entry-description">
+      {{$ctrl.beer.description}}
+    </p>
   </div>
 
-</li>
+</li> 

@@ -6,6 +6,9 @@
     <beer-info beer="$ctrl.currentBeer"/>
   </div>
   <div class="row">
-    <beer-list beers="$ctrl.beers" on-click="$ctrl.selectBeer"/>
+    <beer-list 
+      beers="$ctrl.beers" 
+      on-beer-entry-click="$ctrl.selectBeer"
+    />
   </div>
 </div>

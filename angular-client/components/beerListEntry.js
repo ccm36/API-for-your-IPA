@@ -2,8 +2,10 @@ angular.module('app')
 .component('beerListEntry', {
   bindings: {
     beer: '<',
-    onClick: '<'
+    onBeerEntryClick: '<'
   },
-  controller: function() {},
+  controller: function() {
+    
+  },
   templateUrl: '/templates/beerListEntry.html'
 });
