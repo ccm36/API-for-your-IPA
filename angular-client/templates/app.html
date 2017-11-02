@@ -1,6 +1,6 @@
 <div id="app container">
   <nav class="navbar">
-    <search service="$ctrl.searchService" result="$ctrl.searchResults"/>\
+    <search on-update="$ctrl.updateBeers"/>
   </nav>
   <div class="beerInfo">
     <beer-info beer="$ctrl.currentBeer"/>
