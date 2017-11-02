@@ -1,0 +1,18 @@
+.beer-pic {
+  max-height : 350px;
+  max-width : 250px ;
+}
+
+.beerInfo {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 620px;
+}
+
+.beer-list {
+  overflow: scroll;
+  float: right;
+  max-width: 620px;
+  height: 500px;
+}
