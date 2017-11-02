@@ -1,6 +1,10 @@
 <div id="app container">
   <nav class="navbar">
-    <search on-update="$ctrl.updateBeers"/>
+    <search 
+      beers="beers"
+      get-random-beer="$ctrl.getRandomBeer"
+      get-search-results="$ctrl.getSearchResults"
+    />
   </nav>
   <div class="beerInfo">
     <beer-info beer="$ctrl.currentBeer"/>
