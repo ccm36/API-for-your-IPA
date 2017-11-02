@@ -2,12 +2,15 @@ angular.module('app')
 .controller('AppCtrl', function(itemsService, randomService) {
   
   itemsService.getAll((data) => {
-    this.beers = data;
-    this.currentBeer = this.beers[0];
+    this.beers = data
+
+    this.matchedBeers = data;
+    this.currentBeer = this.beers[9];
   }),
 
   this.selectBeer = (beer) => {
     this.currentBeer = beer;
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   },
 
   this.input = '',
@@ -22,13 +25,13 @@ angular.module('app')
         beer.tagline.toLowerCase().includes(query) ||
         beer.description.toLowerCase().includes(query) ||
         beer.food_pairing.forEach((pairing) => {
-          pairing.toLowerCase().includes(query)
+          pairing.toLowerCase().includes(query);
         })
       )
     })
     this.currentBeer = matchingBeers[0];
     matchingBeers.shift();
-    this.beers = matchingBeers;
+    this.matchedBeers = matchingBeers;
   },
 
   this.getRandomBeer = () => {
